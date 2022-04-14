@@ -3,6 +3,7 @@
         <image class="logo" src="/static/logo.png" />
         <view class="text-area">
             <text class="title">{{ title }}</text>
+            <text class="scss-test">sass</text>
         </view>
     </view>
     <div></div>
@@ -13,7 +14,7 @@ import { ref } from 'vue'
 const title = ref('Hello')
 </script>
 
-<style>
+<style lang="scss">
 .content {
     display: flex;
     flex-direction: column;
@@ -33,6 +34,12 @@ const title = ref('Hello')
 .text-area {
     display: flex;
     justify-content: center;
+
+    .scss-test {
+        font-size: 100rpx;
+        text-align: center;
+        color: red;
+    }
 }
 
 .title {
