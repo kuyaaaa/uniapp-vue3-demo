@@ -10,8 +10,23 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
+import { ref, watch } from 'vue'
+import { storeToRefs } from 'pinia'
+import { useLoginStore } from '../../store/modules/login'
+
+const loginStore = useLoginStore()
+
 const title = ref('Hello')
+
+const { userName, userId } = storeToRefs(loginStore)
+loginStore.userName = '爷傲丶奈我何'
+loginStore.$patch({
+    userName: '爷傲奈我何'
+})
+
+watch(userName, (val) => {
+    console.log(val)
+}, { immediate: true })
 </script>
 
 <style lang="scss">
