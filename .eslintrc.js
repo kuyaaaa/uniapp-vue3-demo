@@ -6,6 +6,11 @@ module.exports = {
         node: true,
         "vue/setup-compiler-macros": true,
     },
+    globals: {
+        getApp: "readonly",
+        uni: "readonly",
+        wx: "readonly",
+    },
     parserOptions: {
         ecmaVersion: 13,
         parser: "@typescript-eslint/parser",
@@ -20,7 +25,11 @@ module.exports = {
     plugins: ["prettier"],
     rules: {
         "prettier/prettier": "error",
-        "import/no-extraneous-dependencies": ["error", { devDependencies: true }],
+        "import/extensions": [2, "never", { "web.js": "never", json: "never", vue: "never" }],
+        "import/no-extraneous-dependencies": [2, { devDependencies: true }],
+        "import/no-unresolved": "off",
+        "import/prefer-default-export": "off",
         "no-debugger": process.env.NODE_ENV === "production" ? "warn" : "off",
+        "no-console": "off",
     },
 };

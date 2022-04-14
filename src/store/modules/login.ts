@@ -1,10 +1,10 @@
 import { defineStore } from "pinia";
 
-export const useLoginStore = defineStore({
+const useLoginStore = defineStore({
     id: "login", // id必填，且需要唯一
     state: () => {
         return {
-            userName: uni.getStorageSync("userName") ? uni.getStorageSync("userName") : "未登录",
+            userName: "xxx",
             userId: 1,
         };
     },
@@ -20,3 +20,5 @@ export const useLoginStore = defineStore({
         },
     },
 });
+
+export default useLoginStore;
