@@ -759,10 +759,17 @@
   resolved "https://registry.npmmirror.com/@types/json5/-/json5-0.0.29.tgz#ee28707ae94e11d2b827bcbe5270bcea7f3e71ee"
   integrity sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==
 
-"@types/node@^17.0.25":
-  version "17.0.25"
-  resolved "https://registry.npmmirror.com/@types/node/-/node-17.0.25.tgz#527051f3c2f77aa52e5dc74e45a3da5fb2301448"
-  integrity sha512-wANk6fBrUwdpY4isjWrKTufkrXdu1D2YHCot2fD/DfWxF5sMrVSA+KN7ydckvaTCh0HiqX9IVl0L5/ZoXg5M7w==
+"@types/node@^17.0.31":
+  version "17.0.31"
+  resolved "https://registry.npmmirror.com/@types/node/-/node-17.0.31.tgz#a5bb84ecfa27eec5e1c802c6bbf8139bdb163a5d"
+  integrity sha512-AR0x5HbXGqkEx9CadRH3EBYx/VkiUgZIhP4wvPn/+5KIsgpNoyFaRlVe0Zlx9gRtg8fA06a9tskE2MSN7TcG4Q==
+
+"@types/uni-app@^1.4.4":
+  version "1.4.4"
+  resolved "https://registry.npmmirror.com/@types/uni-app/-/uni-app-1.4.4.tgz#fe73d0e7c89d5e750605e088ff6695846e019c36"
+  integrity sha512-ZTXnrCTblZyoLIoKbTv1Whz1nxrTcM7vg0qGXzDpXP8m9MqdjKt48N3FffQT1IsJWNkxbvJ1Eg5UHDaq+k+oBQ==
+  dependencies:
+    vue "^2.6.8"
 
 "@typescript-eslint/eslint-plugin@^5.19.0":
   version "5.19.0"
@@ -3334,6 +3341,11 @@ unbox-primitive@^1.0.1:
     has-symbols "^1.0.2"
     which-boxed-primitive "^1.0.2"
 
+uni-ajax@^2.4.4:
+  version "2.4.4"
+  resolved "https://registry.npmmirror.com/uni-ajax/-/uni-ajax-2.4.4.tgz#b058ea266f0b0e62c504bc911ecb1d5e269ac425"
+  integrity sha512-2UlOek3FBD4C8jwouJWAf1NvoseYbpbQXnZ5GsECvZoFl9NrDiazian2tzfMCSQINu3+7uq5499hR2//PYC7PA==
+
 universalify@^2.0.0:
   version "2.0.0"
   resolved "https://registry.npmmirror.com/universalify/-/universalify-2.0.0.tgz#75a4984efedc4b08975c5aeb73f530d02df25717"
@@ -3422,6 +3434,11 @@ vue-router@^4.0.14:
   integrity sha512-wAO6zF9zxA3u+7AkMPqw9LjoUCjSxfFvINQj3E/DceTt6uEz1XZLraDhdg2EYmvVwTBSGlLYsUw8bDmx0754Mw==
   dependencies:
     "@vue/devtools-api" "^6.0.0"
+
+vue@^2.6.8:
+  version "2.6.14"
+  resolved "https://registry.npmmirror.com/vue/-/vue-2.6.14.tgz#e51aa5250250d569a3fbad3a8a5a687d6036e235"
+  integrity sha512-x2284lgYvjOMj3Za7kqzRcUSxBboHqtgRE2zlos1qWaOye5yUmHn42LB1250NJBLRwEcdrB0JRwyPTEPhfQjiQ==
 
 vue@^3.2.31:
   version "3.2.32"

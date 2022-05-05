@@ -29,6 +29,7 @@ module.exports = {
         "import/no-extraneous-dependencies": [2, { devDependencies: true }],
         "import/no-unresolved": "off",
         "import/prefer-default-export": "off",
+        "no-unused-vars": ["warn", { varsIgnorePattern: "Window" }],
         "no-debugger": process.env.NODE_ENV === "production" ? "warn" : "off",
         "no-console": "off",
     },
