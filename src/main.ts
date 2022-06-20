@@ -4,10 +4,6 @@ import App from "./App.vue";
 import "../.env";
 // pinia
 import store from "./store";
-// request
-import request from "@/utils/request";
-
-window.$http = request;
 
 export function createApp() {
     const app = createSSRApp(App);
