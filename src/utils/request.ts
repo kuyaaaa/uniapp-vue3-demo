@@ -6,7 +6,7 @@
 import ajax from "uni-ajax";
 import { TOKEN } from "./static";
 
-const baseURL = `${process.env.BASE_API_URL}`;
+const baseURL = `${import.meta.env.VITE_BASE_URL}`;
 const token = uni.getStorageSync(TOKEN);
 
 // 创建请求实例
