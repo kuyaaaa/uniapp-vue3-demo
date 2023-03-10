@@ -22,15 +22,18 @@ module.exports = {
         "plugin:prettier/recommended",
         "prettier",
     ],
-    plugins: ["prettier"],
+    plugins: ["@typescript-eslint", "prettier"],
     rules: {
         "prettier/prettier": "error",
         "import/extensions": [2, "never", { "web.js": "never", json: "never", vue: "never" }],
         "import/no-extraneous-dependencies": [2, { devDependencies: true }],
         "import/no-unresolved": "off",
         "import/prefer-default-export": "off",
-        "no-unused-vars": ["warn", { varsIgnorePattern: "Window" }],
         "no-debugger": process.env.NODE_ENV === "production" ? "warn" : "off",
         "no-console": "off",
+        "@typescript-eslint/no-unused-vars": [
+            "warn",
+            { varsIgnorePattern: "Window", args: "none" },
+        ],
     },
 };

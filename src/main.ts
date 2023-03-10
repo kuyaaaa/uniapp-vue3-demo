@@ -5,6 +5,10 @@ import "../.env";
 // pinia
 import store from "./store";
 
+import request from "./utils/request";
+
+uni.$http = request;
+
 export function createApp() {
     const app = createSSRApp(App);
     app.use(store);
