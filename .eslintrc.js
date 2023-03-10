@@ -10,6 +10,7 @@ module.exports = {
         getApp: "readonly",
         uni: "readonly",
         wx: "readonly",
+        UniApp: "readonly",
     },
     parserOptions: {
         ecmaVersion: 13,

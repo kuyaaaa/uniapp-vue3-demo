@@ -5,6 +5,7 @@
             <text class="title">{{ title }}</text>
             <text class="scss-test">sass</text>
         </view>
+        <button @click="toTest">to test</button>
     </view>
     <div></div>
 </template>
@@ -32,6 +33,10 @@ watch(
     },
     { immediate: true }
 );
+
+const toTest = () => {
+    uni.navigateTo({ url: "/pages/test/index" });
+};
 </script>
 
 <style lang="scss">

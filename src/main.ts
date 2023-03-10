@@ -1,10 +1,9 @@
 import { createSSRApp } from "vue";
 import App from "./App.vue";
-
-// pinia
+import request from "./utils/request";
 import store from "./store";
 
-import request from "./utils/request";
+import "./utils/interceptor";
 
 uni.$http = request;
 
