@@ -8,8 +8,6 @@ import request from "./utils/request";
 
 uni.$http = request;
 
-console.log(import.meta.env);
-
 export function createApp() {
     const app = createSSRApp(App);
     app.use(store);
