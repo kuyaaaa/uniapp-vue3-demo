@@ -11,10 +11,6 @@
 </template>
 
 <script setup lang="ts">
-import { ref, watch } from "vue";
-import { storeToRefs } from "pinia";
-import useLoginStore from "@/store/modules/login";
-
 const loginStore = useLoginStore();
 
 const title = ref("Hello");
